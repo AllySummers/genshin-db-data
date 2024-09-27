@@ -1,5 +1,9 @@
 name: 'Build Data'
 on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
   repository_dispatch:
     types: [genshin-db_release]
 
